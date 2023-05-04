@@ -43,7 +43,7 @@ const App = () => {
     e.preventDefault();
     const task = { id: shortid.generate(), name: taskName };
     addTask(task);
-    socket.on('addTask', task);
+    socket.emit('addTask', task);
   };
 
   return (

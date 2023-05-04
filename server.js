@@ -5,7 +5,7 @@ const socket = require('socket.io');
 const tasks = []; // { id: 1, name: "Shopping" }
 
 const server = app.listen(8000, () => {
-  console.log('Server is running on port: 8000');
+  console.log('Server is running on port:', 8000);
 });
 const io = socket(server);
 
